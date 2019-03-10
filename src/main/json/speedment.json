@@ -1,0 +1,93 @@
+{
+  "config" : {
+    "speedmentVersion" : "Speedment:3.1.12",
+    "nameProtected" : false,
+    "expanded" : true,
+    "appId" : "09585884-594b-4a1f-a6ca-2ae719c68e83",
+    "companyName" : "Hiberus",
+    "name" : "Messaging",
+    "packageLocation" : "src/main/java/",
+    "id" : "public",
+    "dbmses" : [
+      {
+        "nameProtected" : true,
+        "expanded" : true,
+        "port" : 5432,
+        "schemas" : [
+          {
+            "nameProtected" : true,
+            "expanded" : true,
+            "tables" : [
+              {
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "message_pkey",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "id",
+                        "id" : "id",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "message_pkey",
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "expanded" : true,
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "value",
+                    "id" : "value",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "message",
+                "id" : "message",
+                "enabled" : true
+              }
+            ],
+            "name" : "public",
+            "id" : "public",
+            "enabled" : true
+          }
+        ],
+        "typeName" : "PostgreSQL",
+        "ipAddress" : "127.0.0.1",
+        "name" : "java8db",
+        "id" : "java8db",
+        "enabled" : true,
+        "username" : "java8usr"
+      }
+    ],
+    "enabled" : true
+  }
+}
